@@ -19,8 +19,10 @@
   }
 
   .about-wrapper {
+    padding-bottom: 10rem;
+
     @include respond(phone) {
-      padding-bottom: 5rem;
+      padding-bottom: 10rem;
     }
 
     &__image {
