@@ -25,11 +25,12 @@ export const heroData = {
   name: 'Samir',
   subtitle: 'A software engineer based in the Greater Toronto Area.',
   cta: '',
+  resume: 'Samir_Haq_Resume.pdf',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'samirhaq.png',
   paragraphOne: 'I\'m currently a computer science student with a minor in math at the University of Guelph graduating in 2021. I have been programming for 7 years and have amassed a wide skillset thus far. I have experience programming in a multitude of languages and frameworks.',
   paragraphTwo: 'I love both back-end and front-end programming and I have a passion for using my critical thinking skills to solve challeging problems. I love learning and I am always striving to extract as much knowledge as possible from any experience I get. I am also a very curious person who has many interests outside of just programming.',
   paragraphThree: 'If you want a more in depth look at my life, click below...',
@@ -95,63 +96,58 @@ export const timelinesData = [
 
 ];
 
-// SKILLS DATA
-export const skillsData = {
-  skills: ''
-};
-
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'kazimoto.jpg',
     title: 'Kazimoto',
-    info: 'A website built using React and Meteor for a company that retails car detailing products. The website is currently just a landing page but will later be fully developed into a full webstore.',
-    info2: 'This website was my first real exposure to using React and I learned a lot about the framework by playing around with it here. The website also contains an emailJS server which lets the user fill out a message form and sends an email containing the message to the company email.',
+    info: 'A landing page for a startup company based in Mississauga. The website was developed using ReactJS and has a built in email server that sends an automatic email to the owner when someone leaves a message on the page.',
+    info2: 'Tech Stack: ReactJS, AJAX, JQuery',
     url: 'http://www.kazimoto.ca',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/samirhaq/Kazimoto', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: 'Sundial',
-    info: 'This webapp lets you view the Sunshine List data for select provinces and you can manipulate the data to filter out what you want to see our make graphs to compare.',
-    info2: 'This project was a group assingment for our Systems Design in Applications class at UofG. This app was built using React with a Javascript backend to scrape and parse the data. My job was mostly using react-vis to implement the visualizations using the data from the Sunshine lists',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'Geanology App',
-    info: 'This webapp lets you pass in GEDCOM files and then parses it to link family trees together and lets you view it. You can then see the family tree information such as a specific members descendants or anscestors, the number of members in a family, the number of members in a generation etc.',
-    info2: 'This was my first full-stack web application made for the class Software Systems Devlopment and Integration. It was built with a C backend for parsing, a NodeJS server, a MySQL database and a Bootstrap frontend',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
+    img: 'shopify-developers.jpg',
     title: 'VendorX',
-    info: 'This is a Shopify integrated application using Ruby on Rails. Many stores never hold any inventory themselves, rather take an order from a customer, and then send that order to the vendors. This app will automate the process so as soon as an order is issued from a customer. The order will be parsed and exported into a csv file for each vendor, which will then be sent out to the specific products for each vendor.',
-    info2: 'This was my first attempt at using Ruby on Rails as well as using API authentication such as OAuth2. So far the application only has the backend to parse out the order but the rest is still in progress.',
+    info: 'A Shopify integrated application using Ruby on Rails. Many stores never hold any inventory themselves, rather take an order from a customer, and then send that order to the vendors. This app will automate the process so as soon as an order is issued from a customer. The order will be parsed and exported into a csv file for each vendor, which will then be sent out to the specific products for each vendor.',
+    info2: 'Tech Stack: OAuth2, Ruby on Rails, Shopify API',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/samirhaq/shopify-app', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: 'Mattermost/Slack Bots',
-    info: 'I have made a couple different messaging service related bots for a hackday at Tulip as well as for a school project. The first bot for slack was a very simple full-stack application that lets a user enter in HR-like questions into the system with pre-canned answers. This way, whenever a new employee has a FAQ, they can ask the HR-bot rather than having to ask someone all the time. The second application was to send everyone invloved in a meeting a notification for the meeting with the time, room, meeting link and members to remind them that they have a meeting coming up',
-    info2: 'The first bot using Slack was a much more simple concept, but it was built with a fully functioning backend and database using NodeJS and MongoDB which made it good exposure for the complete full-stack experience. The Mattermost bot was made using the Google Calender API and Python to parse out all the meetings and then send a hook containing all the data to Mattermost.',
+    img: 'geanology.png',
+    title: 'Geanology App',
+    info: 'A webapp to let you pass in GEDCOM files and then parses it to link family trees together and lets you view it. You can then see the family tree information such as a specific members descendants or anscestors, the number of members in a family, the number of members in a generation etc. Build using an API built in C, along with a MySQL database and a NodeJS server. Uses Bootstrap and Express for the front end framework.',
+    info2: 'Tech Stack: C, NodeJS, ExpressJS, JQuery, Bootstrap, MySQL',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/samirhaq/Geanology-App', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'GoogleCalender.jpg',
+    title: 'Mattermost Calender Bot',
+    info: 'A Mattermost Bot built while working at Tulip to send reminders to attendees via direct message to remind them of a meeting 1 minute prior. The message contains the room, attendees, and any possible meeting link.',
+    info2: 'Tech Stack: Python, Google Calender API, GitLab scheduler, Mattermost API',
+    url: '',
+    repo: 'https://github.com/samirhaq', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'fantasybasketball.png',
+    title: 'In Progress: Fantasy Basketball Tool',
+    info: 'I have developed a large passion for basketball, especially fantasy basketball, so I wanted to create a tool for 9 category fantasy that uses simple machine learning to identify your teams build. Including identifying your strengths and punts and matchup based suggestions. Based on this, using Yahoo! fantasy projections, or regular season stats, will suggest the best players to pickup either for your build, or for your weekly matchup. If you have any other suggestions to add, please contact me!',
+    info2: 'Tech Stack: Yahoo Fantasy API, NodeJS, ReactJS',
+    url: '',
+    repo: 'https://github.com/samirhaq', // if no repo, the button will not show up
   },
 ];
 
 // CONTACT DATA
 export const contactData = {
-  cta: 'Contact me if you would like to know more!',
+  cta: 'Contact me if you would like to work together!',
   btn: 'Contact Me',
   email: 'samirhaq031@gmail.com',
 };
@@ -159,11 +155,6 @@ export const contactData = {
 // FOOTER DATA
 export const footerData = {
   networks: [
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
     {
       id: nanoid(),
       name: 'linkedin',

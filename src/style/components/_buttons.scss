@@ -60,6 +60,46 @@
   }
 }
 
+/* Resume Style */
+.cta-btn--resume {
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  // Responsive Button hero style
+  @include respond(phone) {
+    background-image: none;
+    border: 2px solid $secondary-color;
+    -webkit-text-fill-color: $secondary-color;
+  }
+
+  &::after {
+    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    // Responsive Button hero style
+    @include respond(phone) {
+      background-image: none;
+    }
+  }
+
+  &:hover {
+    -webkit-text-fill-color: $white-color;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    border-image-slice: 1;
+    // Responsive Button hover hero style
+    @include respond(phone) {
+      -webkit-text-fill-color: $secondary-color;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+
 /* View More Style */
 .cta-btn--view-more {
   color: $white-color;

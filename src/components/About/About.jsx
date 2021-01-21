@@ -67,9 +67,9 @@ const About = (props) => {
                 <p className="about-wrapper__info-text">
                   {paragraphThree}
                 </p>
-                <span className="d-flex mt-3">
-                    {togglePanelButton()}
-                </span>
+                  <span className="d-flex mt-3">
+                      {togglePanelButton()}
+                  </span>
               </div>
             </Fade>
           </Col>
